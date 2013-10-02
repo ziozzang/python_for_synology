@@ -4,7 +4,7 @@ python_for_synology
 Python ENV for Synology NAS
 
 ```
-curl https://raw.github.com/ziozzang/mongodb-cloud-provisioning/master/install-centos | sh
+curl https://raw.github.com/ziozzang/python_for_synology/master/install-pip | sh
 ```
 
 
