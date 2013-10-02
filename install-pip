@@ -1,0 +1,15 @@
+# You Must Install Python Package from Package Manager.
+
+python --help > /dev/null
+if [[ "$?" -ne "0" ]]; then
+  echo "Cannot find Python."
+  exit 0
+fi
+
+wget http://peak.telecommunity.com/dist/ez_setup.py
+python ez_setup.py
+ln -s /var/packages/Python/target/usr/local/bin/easy_install /usr/bin/
+easy_install pip
+
+ln -s /usr/syno/synoha/bin/bash /bin/bash
+
